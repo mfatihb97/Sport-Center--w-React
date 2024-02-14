@@ -1,0 +1,204 @@
+:root{
+    --general-color-1:#375390;
+    --general-color-2:#8397bd;
+  }
+.gym-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:white    ;
+    background: linear-gradient(251deg, rgba(246,246,246,1) 55%, rgba(255,255,255,1) 55%);
+}
+.top-outer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 70%;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 576px) {
+    .top-outer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+    }
+}
+
+
+
+.line{
+    width: 100px;
+    height: 10px;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.class-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    margin-top: 30px;    
+}
+
+@media screen and (max-width: 576px) {
+    .class-section {
+        gap: 10px;
+    }
+}
+.classes{
+    display: flex;
+    background-color: var(--general-color-1);
+    height: 45px;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    outline: none !important;
+    
+}
+
+.classes.active{
+    background-color: orange;
+    border: none !important;
+    outline: none !important;
+}
+
+
+.classes:hover{
+    background-color: var(--general-color-2);
+}
+
+.class-content{
+    display: none;
+    gap: 100px;
+}
+
+@media screen and (max-width: 576px) {
+    .class-content.show {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+
+    }
+}
+
+.show{
+    display: flex;
+}
+
+@media screen and (max-width: 576px) {
+    .show {
+        flex-direction: column;
+    }
+}
+
+.yoga{
+    display: flex;
+    margin-top: 50px;
+    gap: 100px;
+    margin-bottom: 50px;    
+}
+
+.yoga .yoga-image{
+    margin-top: 70px;
+}
+
+.gym-class p{
+    font-weight: 700;
+}
+.yoga h2{
+    font-weight: 900;
+}
+
+.bottom-gym{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.bottom-gym-inner{
+    display: flex;
+    max-width: 70%;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+@media screen and (max-width: 576px) {
+    .bottom-gym-inner {
+        flex-direction: column;
+    }
+}
+
+.bmi-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.triangle{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent; /* Sol kenar */
+    border-right: 25px solid transparent; /* Sağ kenar */
+    border-bottom: 50px solid orange; /* Alt kenar ve üçgenin rengi */
+}
+
+.calculation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 150px;
+}
+
+@media screen and (max-width: 576px) {
+    .calculation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+}
+
+.bottom-gym p{
+    font-weight: 700;
+}
+
+.bmi-calculator{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 576px) {
+    .bmi-calculator {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+.bmi-calculate-button{
+    background-color: #375390;
+    color: white;
+}
+.bmi-calculate-button:hover{
+    background-color: var(--general-color-2);
+    
+}
+
+.reset-button:hover{
+    background-color: var(--general-color-2);
+}
+

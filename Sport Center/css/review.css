@@ -1,0 +1,167 @@
+:root{
+    --general-color-1:#375390;
+    --general-color-2:#8397bd;
+}
+
+.footer-review{
+    font-weight: 700;
+}
+.client-review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color:rgb(231, 244, 252) ;
+}
+.client-review h2{
+    font-size: 24px;
+}
+.client-review h3{
+    font-size: 16px;
+}
+
+.reviews{
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 150px; 
+    margin-bottom: 50px;
+    font-weight: 700;   
+}
+
+@media screen and (max-width: 576px) {
+    .reviews {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .client-reviews{
+        max-width: 90%;
+    }
+
+    .client-review p{
+        max-width: 90%;
+    }
+}
+
+
+.client-reviews{
+    display: flex;
+    flex-direction: column;
+}
+
+.client-inner{
+    display: flex;
+    gap: 30px;
+
+}
+
+.client-inner img{
+   border-radius: 50%;
+
+}
+
+.client-p{
+    background-color: var(--general-color-1);
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.inner-boxes{
+    display: flex;
+    gap: 425px;
+}
+
+.inner-box{
+    background: linear-gradient(to top left, transparent 50%, var(--general-color-2) 50%);
+    height: 50px;
+    width: 50px;
+}
+
+.inner-box-left{
+    background: linear-gradient(to top right, transparent 50%, var(--general-color-2) 50%);
+    height: 50px;
+    width: 50px;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.addres{
+    display: flex;
+    flex-direction: column;
+}
+.addres-left{
+    display: flex;
+    gap: 30px;
+}
+
+.addres-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+.input-bg{
+    background-color: rgb(231, 244, 252);
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+} 
+
+.contact-inf{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 576px) {
+    .contact-inf {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 30px;
+    }
+}
+
+.footer{
+    background-color: var(--general-color-1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-extend{
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-header{
+    text-align: left;
+}
+
+.footer-detail{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    gap: 100px;
+}
+
+.footer-inf{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}

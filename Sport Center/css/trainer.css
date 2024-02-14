@@ -1,0 +1,207 @@
+:root{
+    --general-color-1:#375390;
+    --general-color-2:#8397bd;
+}
+.trainers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    font-weight: 700;
+}
+.trainer-info{
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.line-gym{
+    display: flex;
+    width: 150px;
+    height: 10px;
+    background-color: orange;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.trainer-img{
+    display: flex;
+    gap: 100px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    justify-content: center;   
+}
+
+@media screen and (max-width: 576px) {
+    .trainer-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;        
+    }
+}
+
+.trainer-img-inf{
+    display: flex;
+    position: relative;
+    height: auto;
+    border: 4px solid orange;
+    max-width: 306px;
+    border-radius: 5px;
+}
+
+.trainer-img-inf img {
+    width: auto;
+    height: auto;
+    margin-left: -16px;
+}
+
+.trainer-bg-1 {
+    position: absolute;
+    border: 7px solid var(--general-color-1);
+    top: 50%;
+    width: 330px;
+    z-index: -1;
+    height: 60px;
+    left: -5%;
+    transform: translateY(-50%);
+    background: var(--general-color-1);
+}
+.trainer-bg-2 {
+    position: absolute;
+    border: 7px solid var(--general-color-1);
+    width: 60px;
+    height: 380px;
+    z-index: -1;
+    left: 50%;
+    top: -4%;
+    transform: translateX(-50%) rotate(180deg);
+    background: var(--general-color-1);
+}
+.overlay {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: var(--general-color-1); 
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+
+
+.trainer-img-inf:hover .overlay {
+    opacity: 1;
+}
+
+.trainer-img-inf:hover .trainer-bg-1{
+    height: 90px;
+}
+
+.trainer-img-inf:hover .trainer-bg-2{
+    width: 90px;
+}
+
+.purchase{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 576px) {
+    .purchase{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+}
+
+.purchase-img{
+    max-width: 70%;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap:20px;
+}
+
+@media screen and (max-width: 576px) {
+    .purchase-img{
+       display: grid;
+       grid-template-columns: 1fr;
+       max-width: 100%;
+       justify-items: center;
+    }
+}
+
+.purchase-img-inf{
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 0 0px ;
+}
+
+@media screen and (max-width: 576px) {
+    .purchase-img-inf{
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .purchase-img-inf{
+        display: flex;
+        flex-direction: column;
+        align-items: center;       
+    }
+}
+
+
+.purchase-img img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    border-radius: 5px;    
+    margin-bottom: 20px;        
+}
+
+.purchase-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.purchase-img-inf i{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-right: 80px;
+    margin-bottom: 30px;    
+}
+
+.shop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right:100px ;
+}
+
+@media screen and (max-width: 576px) {
+    .shop{
+        padding-right: 60px;     
+    }
+}
+
